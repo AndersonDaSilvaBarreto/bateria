@@ -4,7 +4,6 @@ document.body.addEventListener("keyup", (event) => {
 document.querySelector(".composer button").addEventListener("click", ()=> {
     let song = document.querySelector("#input").value
     song = song.toLowerCase()
-    console.log(song)
     if(song !== "") {
         let songArray = song.split("")
         playComposition(songArray)
